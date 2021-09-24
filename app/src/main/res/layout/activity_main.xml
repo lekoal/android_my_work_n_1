@@ -10,39 +10,39 @@
         android:layout_width="match_parent"
         android:layout_height="fill_parent"
         android:orientation="vertical"
+        tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="1dp"
-        tools:layout_editor_absoluteY="1dp"
-        tools:ignore="MissingConstraints">
+        tools:layout_editor_absoluteY="1dp">
 
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="That's my first work"
+            android:layout_gravity="center"
             android:fontFamily="sans-serif-light"
+            android:text="That's my first work"
             android:textColor="#FF0000"
             android:textSize="20sp"
-            android:layout_gravity="center"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
         <EditText
-            android:labelFor="@+id/editTextFirst"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
-            tools:text="enter here something"/>
+            android:labelFor="@+id/editTextFirst"
+            tools:text="enter here something" />
 
         <Button
             android:layout_width="wrap_content"
             android:layout_height="80dp"
+            android:layout_gravity="center"
+            android:shadowColor="#556B2F"
             android:shadowDx="-10"
             android:shadowDy="10"
             android:shadowRadius="3"
-            android:shadowColor="#556B2F"
-            android:layout_gravity="center"
             android:text="Push me" />
 
 
@@ -50,42 +50,39 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             tools:fontFamily="sans-serif-smallcaps"
-            tools:text="you can switch anything"
-            tools:ignore="UseSwitchCompatOrMaterialXml" />
+            tools:ignore="UseSwitchCompatOrMaterialXml"
+            tools:text="you can switch anything" />
 
         <CheckBox
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="That's checkbox"
-            android:layout_gravity="center_horizontal"/>
+            android:layout_gravity="center_horizontal"
+            android:text="That's checkbox" />
 
         <ToggleButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:padding="60dp"
-            android:textSize="30dp"
             android:textColor="#00FFFF"
-            />
+            android:textSize="30dp" />
 
         <RadioGroup
-            android:layout_marginTop="30dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            >
+            android:layout_marginTop="30dp">
 
             <RadioButton
-                android:text="you can push here"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                android:text="you can push here" />
 
             <RadioButton
-                android:text="or here"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                android:text="or here" />
 
         </RadioGroup>
-
 
     </LinearLayout>
 
